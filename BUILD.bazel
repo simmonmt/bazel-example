@@ -1,12 +1,12 @@
-load("@rules_proto_grpc//js:defs.bzl", "js_grpc_web_library")
+load("@npm//@bazel/labs:index.bzl", "ts_proto_library")
+load("@rules_proto//proto:defs.bzl", "proto_library")
 
-js_grpc_web_library(
-    name = "thing_js_grpc",
-    protos = ["@rules_proto_grpc//example/proto:thing_proto"],
+proto_library(
+    name = "test_proto",
+    srcs = ["test.proto"],
 )
 
-js_grpc_web_library(
-    name = "greeter_js_grpc",
-    protos = ["@rules_proto_grpc//example/proto:greeter_grpc"],
-    deps = ["thing_js_grpc"],
+ts_proto_library(
+    name = "test_ts_proto",
+    proto = ":test_proto",
 )

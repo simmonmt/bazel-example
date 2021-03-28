@@ -1,10 +1,13 @@
 {
-   "dependencies" : {
-      "@grpc/grpc-js" : "1.2.6",
-      "google-protobuf" : "3.15.3",
-      "grpc-tools" : "1.10.0",
-      "grpc-web" : "1.2.1",
-      "ts-protoc-gen" : "0.14.0"
+   "dependencies": {
+      "@grpc/grpc-js": "1.2.6",
+      "google-protobuf": "3.15.3",
+      "grpc-tools": "1.10.0",
+      "grpc-web": "1.2.1",
+      "ts-protoc-gen": "0.14.0"
    },
-   "private" : true
+   "private": true,
+   "devDependencies": {
+      "@bazel/labs": "^3.2.3"
+   }
 }

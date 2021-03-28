@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@bazel/labs@^3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@bazel/labs/-/labs-3.2.3.tgz#00202de3064db60df425653c9fa5ce807941ffb5"
+  integrity sha512-OLqc/pxcUco2grYq7/Dt502w5RQNA+3PMSSFu4NI0EEYP3EWFHGSAPtEy4mfibdJukJ4+NccjKt1x3RWatKcQQ==
+
 "@grpc/grpc-js@1.2.6":
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.2.6.tgz#579c433ab9b9dda8a62080db1ac0c86dce58bbaa"
