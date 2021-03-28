@@ -20,6 +20,7 @@ ts_project(
         ":echo",
         "@npm//@types/google-protobuf",
 	"@npm//google-protobuf",
+	"@npm//grpc-web",
     ],
 )
 
