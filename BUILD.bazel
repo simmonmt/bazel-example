@@ -2,11 +2,11 @@ load("@npm//@bazel/labs:index.bzl", "ts_proto_library")
 load("@rules_proto//proto:defs.bzl", "proto_library")
 
 proto_library(
-    name = "test_proto",
-    srcs = ["test.proto"],
+    name = "echo_proto",
+    srcs = ["echo.proto"],
 )
 
 ts_proto_library(
-    name = "test_ts_proto",
-    proto = ":test_proto",
+    name = "echo_ts_proto",
+    proto = ":echo_proto",
 )
