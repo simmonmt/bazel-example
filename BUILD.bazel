@@ -1,6 +1,8 @@
 load("@npm//@bazel/labs:index.bzl", "ts_proto_library")
+load("@npm//@bazel/rollup:index.bzl", "rollup_bundle")
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
 load("@rules_proto//proto:defs.bzl", "proto_library")
+load("@npm//http-server:index.bzl", "http_server")
 
 proto_library(
     name = "echo_proto",
@@ -8,14 +10,38 @@ proto_library(
 )
 
 ts_proto_library(
-    name = "echo_ts_proto",
+    name = "echo",
     proto = ":echo_proto",
 )
 
 ts_project(
-		srcs = [ "main.ts" ],
+    srcs = ["main.ts"],
     deps = [
-        ":echo_ts_proto",
-	"@npm//@types/google-protobuf",
+        ":echo",
+        "@npm//@types/google-protobuf",
+	"@npm//google-protobuf",
+    ],
+)
+
+rollup_bundle(
+    name = "bundle",
+    config_file = "rollup.config.js",
+    entry_point = ":main.ts",
+    format = "iife",
+    deps = [
+        ":tsconfig",
+	":echo",
+        "@npm//:node_modules",
+        "@npm//@rollup/plugin-commonjs",
+        "@npm//@rollup/plugin-node-resolve",
+	"@npm//google-protobuf",
+    ],
+)
+
+http_server(
+    name = "prodserver",
+    data = [
+        "index.html",
+        ":bundle.js",
     ],
 )

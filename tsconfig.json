@@ -5,6 +5,7 @@
          "dom",
          "es5"
       ],
+      "moduleResolution" : "node",
       "rootDirs" : [
          ".",
          "bazel-out/k8-fastbuild/bin"
