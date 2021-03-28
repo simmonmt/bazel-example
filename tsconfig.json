@@ -1,0 +1,18 @@
+{
+   "compilerOptions" : {
+      "lib" : [
+         "es2015.promise",
+         "dom",
+         "es5"
+      ],
+      "rootDirs" : [
+         ".",
+         "bazel-out/k8-fastbuild/bin"
+      ],
+      "strict" : true
+   },
+   "include" : [
+      "*.tsx",
+      "*.ts"
+   ]
+}

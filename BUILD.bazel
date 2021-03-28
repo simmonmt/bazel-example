@@ -1,4 +1,5 @@
 load("@npm//@bazel/labs:index.bzl", "ts_proto_library")
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
 load("@rules_proto//proto:defs.bzl", "proto_library")
 
 proto_library(
@@ -9,4 +10,12 @@ proto_library(
 ts_proto_library(
     name = "echo_ts_proto",
     proto = ":echo_proto",
+)
+
+ts_project(
+		srcs = [ "main.ts" ],
+    deps = [
+        ":echo_ts_proto",
+	"@npm//@types/google-protobuf",
+    ],
 )
