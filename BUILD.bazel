@@ -15,7 +15,7 @@ ts_proto_library(
 )
 
 ts_project(
-    srcs = ["main.ts"],
+    srcs = ["main.tsx"],
     deps = [
         ":echo",
         "@npm//@types/google-protobuf",
@@ -27,7 +27,7 @@ ts_project(
 rollup_bundle(
     name = "bundle",
     config_file = "rollup.config.js",
-    entry_point = ":main.ts",
+    entry_point = ":main.tsx",
     format = "iife",
     deps = [
         ":tsconfig",
