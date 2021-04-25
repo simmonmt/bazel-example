@@ -10,19 +10,19 @@
     regenerator-runtime "^0.13.4"
 
 "@bazel/labs@^3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@bazel/labs/-/labs-3.2.3.tgz#00202de3064db60df425653c9fa5ce807941ffb5"
-  integrity sha512-OLqc/pxcUco2grYq7/Dt502w5RQNA+3PMSSFu4NI0EEYP3EWFHGSAPtEy4mfibdJukJ4+NccjKt1x3RWatKcQQ==
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@bazel/labs/-/labs-3.4.1.tgz#b67f6748126a28a2e5d38e89a702f6340b1b2902"
+  integrity sha512-xYyrkuRL6TYkYFjGKN0UhlUNr8+8qs2XmZc+hY1BuXytPU3WB/aezxsyd6r9QmHqcqlkRio5R+5hm7tlPYGlcg==
 
 "@bazel/rollup@^3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@bazel/rollup/-/rollup-3.2.3.tgz#eb6b17f89da5d38b035a6d59a99000f2d5ada667"
-  integrity sha512-7PmJqekk92OaiwwEN3dYsp5qbZX8cqr0WkFUiaM3FBsNYVoN/rdh+VxQJWTuDGLjWiHxLwE95YwVHcvwerSrCg==
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@bazel/rollup/-/rollup-3.4.1.tgz#4ffdf93433a268f3c4a4a8c914e71b1fc876ad4a"
+  integrity sha512-E5iNbL4r6FDo8UhhZ/PFTtN6VAjbSx+nwrvwHw580uBjQCUiApBdluabIXfhBFChHKrVBpL1du5eekQD+GqKLQ==
 
 "@bazel/typescript@^3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-3.2.3.tgz#6e40bdb7c5294e588bac3b7d1269e58b98a1856c"
-  integrity sha512-Q1Yin/AYdh9yrkSJo3H6nVn6mMaohr5syjLd0Df0w7WI4zerdJTxrY5nhoWZwO/S1rPj8/MedDwZudCqPDeDMA==
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-3.4.1.tgz#ec52292b240157cd2d874ff7ea7857da8416c00c"
+  integrity sha512-OKpfjFRhudsaUBL3xH1oAbat+bwdRyfAOTn2qgMQSO3vR4ZBBVYk7GVMJzWamLkbDS0aY5ws5wLfDScJSKD2ww==
   dependencies:
     protobufjs "6.8.8"
     semver "5.6.0"
@@ -233,9 +233,9 @@
   integrity sha512-kjivUwDJfIjngzbhooRnOLhGYz6oRFi+L+EpMjxroDYXwDw9lHrJJ43E+dJ6KAd3V3WxWAJ/qZE9XKYHhjPOFQ==
 
 "@types/node@^10.1.0":
-  version "10.17.56"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.56.tgz#010c9e047c3ff09ddcd11cbb6cf5912725cdc2b3"
-  integrity sha512-LuAa6t1t0Bfw4CuSR0UITsm1hP17YL+u82kfHGrHUWdhlBtH7sa7jGY5z7glGaIj/WDYDkRtgGd+KCjCzxBW1w==
+  version "10.17.58"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.58.tgz#10682f6016fd866725c36d22ce6bbbd029bf4545"
+  integrity sha512-Dn5RBxLohjdHFj17dVVw3rtrZAeXeWg+LQfvxDIW/fdPkSiuQk7h3frKMYtsQhtIW42wkErDcy9UMVxhGW4O7w==
 
 "@types/prop-types@*":
   version "15.7.3"
