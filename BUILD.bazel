@@ -18,6 +18,7 @@ ts_project(
     srcs = ["main.tsx"],
     deps = [
         ":echo",
+	"@npm//@material-ui/core",
 	"@npm//@types",
 	"@npm//csstype",
 	"@npm//google-protobuf",

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import Button from '@material-ui/core/Button';
 import {EchoRequest} from './echo_pb';
 import {EchoServiceClient} from './echo_grpc_web_pb';
 
@@ -10,6 +11,6 @@ console.log(new EchoRequest());
 console.log(echoService);
 
 ReactDOM.render(
-  <h1>Hello, world</h1>,
+  <Button variant="contained" color="primary">Hello World</Button>,
   document.getElementById("root")
 );
