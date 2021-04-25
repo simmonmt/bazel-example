@@ -18,7 +18,8 @@ ts_project(
     srcs = ["main.tsx"],
     deps = [
         ":echo",
-        "@npm//@types/google-protobuf",
+	"@npm//@types",
+	"@npm//csstype",
 	"@npm//google-protobuf",
 	"@npm//grpc-web",
     ],
